@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt,letterpaper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Deepan} % Your first name
+\familyname{Das} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{121 W Gilman Street}{Madison, WI- 53703}
+\mobile{(+1) 6087339597}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{ddas27@wisc.edu}
+\homepage{http://bit.ly/2IgW5ye}{Github} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %exampl
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+\quote{Seeking Internship Opportunities}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2018-2020}{University of Wisconsin Madison}{Dept. of Electrical and Computer Engineering}{}{}{MS in Electrical and Computer Engineering(Focus on Machine Learning) | 3.55/4.00}  % Arguments not required can be left empty
+
+\cventry{2014-2018}{Indian Institute of Engineering Science and Technology Shibpur}{}{}{}{Bachelor of Technology in Electronics and Telecommunication Engineering | \textit{8.87/10.00}}
+
+%---------------------------------------------------------
+% RESEARCH EXPERIENCE
+%---------------------------------------------------------
+
+\section{Research Experience}
+
+\cventry{Jan 2019-}{Graduate Research}{\textit{Dept. of Electrical and Computer Engineering}}{UW Madison}{}{\textbf{Learning Similarity between Text and Image Modalities}: Explore Embedding network structures that learns to map similar sentences and images in a closely spaced neighborhood. Plan to develop a network that produces good results in relevant image-text matching tasks, while using Flickr30K and MSCOCO datasets }
+
+
+\cventry{2017-2018}{Undergraduate Senior Year Thesis}{\textit{Indian Institute of Engineering Science and Technology}}{}{}{\textbf{Supervised Classification of Mammogram Texture using ELTP Features}: Developed a SVM based Supervised classification module to differentiate between breast tissue texture as a precursory measure for carcinogenic tissue detection. Used several texture features and made a comparative study before settling on Enhanced Local Ternary Patterns | \textbf{Advisor:} Dr.Ankita Pramanik}
+
+
+\cventry{May-Jul 2017}{SRFP Fellow + Summer Research Intern}{\textit{Indian Science Academies' Research Program}}{}{}{\textbf{Unsupervised Anomalous Trajectory Detection in Crowded Scenes}: Developed a MATLAB Module that extracts, identifies and detects anomalous trajectories from video footage of crowded scenes using Mean Shift Clustering and an Entropy based measure for anomaly detection | \textbf{Advisor:} Dr. Deepak Mishra, Virtual Reality Laboratory, IIST Thiruvananthapuram}
+
+\cventry{May-Jul 2017}{SRIP Fellow + Summer Research Intern}{\textit{Indian Institute of Information Technology, Allahabad}}{}{}{\textbf{Estimation of Arousal and Valence information using DEAP EEG Database}: Developed a tool to estimate the Lateralization of brain activity and Valence-Arousal information independently while characterizing various emotional experiences that are being felt by a person. | \textbf{Advisor:} Dr. Uma Shanker Tiwary, Speech, Image \& Language Lab.}
+
+
+\section{Working Experience}
+
+\cventry{Jan-May 2019}{Graduate Teaching Assistant}{\textit{CS 301 - Data Programming}}{\textbf{Instructor:} Tyler Harter}{}{Introductory course to Data Science programming tasks with Python - Data structures, Data Formats(JSON, CSV, XML), Query SQL Databases and Generation of insightful plots using standard libraries. Use of standard libraries to execute and perform preliminary Machine learning and data handling algorithms.}
+
+\cventry{Jul-Dec 2015}{Technical Content Developer}{\textit{Proyozone Labs}}{}{}{Development and Design of e-content aimed for students willing to make informed career choices in addition to operations.}
+
+
+\section{Academic Projects}
+
+\cventry{Aug-Dec 2018}{Hierarchical Attention Network for multi-label text classification}{\textbf{Dr. Yu Hen Hu}}{UW Madison}{}{Implemented several LSTM based architectures to accomplish the task of multi-label classification of text data sourced from the Kaggle-Jigsaw AI and Conversation(Alphabet Inc.) Toxic Comment Classification Challenge. Explored and tested several key Deep Learning optimization techniques and settled on the use of Hierarchical Attention Networks with the usage of Data Augmentation as the best performing model.}
+
+\cventry{Aug-Dec 2018}{Multi-feature Texture Classification}{\textbf{Dr. William Sethares}}{UW Madison}{}{Implemented a supervised classification module on Mathematica to accomplish multi-texture classification while using a large set of features(Statistical+Segmentation+ GLCM). Improved the performance of the classifier by evaluating the relevance of each set of features and achieved an accuracy of above 95\% }
+
+\cventry{Jan-May 2016}{Software based Digital Storage Oscilloscope}{\textbf{Dept. of E\&TCE, IIEST Shibpur}}{}{}{Developed a Python based module to simulate a Digital Storage Oscilloscope model as a cheap and convenient alternative for students to use. Gained familiarity with several Python modules and libraries while designing complicated signal processing and analysis modules using Arduino.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\cventry{2018}{Unsupervised Anomalous Trajectory Detection in Crowded Scenes}{}{}{}{Published in the 13th IEEE International Conference on Industrial and Information Systems (ICIIS), 2018 - Image, Video and Multi-dimensional Signal Processing Track. | Co-author: Dr. Deepak Mishra}
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\section{Certifications}
+
+\cventry{2018}{Algorithmic Trading and Stocks Essentials Trading}{Lynda}{Michael McDonald}{}{Fundamentals of Quantitative Rules and Strategies | Gathering data for trading algorithms | Designing and testing algorithms | Buying and selling with trading algorithms | Gained familiarity with Excel and Python modules to accomplish such tasks}
+
+
+\cventry{2018}{Data Visualization}{Coursera}{University of Illinois-Urbana Champaign}{}{Instructor: Dr. John C Hart | License: KDFZSFCFX48X | Learned fundamentals of Data Visualization techniques and proceeded on to advanced visualization tasks. Gained familiarity with software packages like Tableau.}
+
+\cventry{2015}{LAAL - Quantitative Logic and Soft Computing}{GIAN - IIT Kharagpur}{Dr. Esko Turunen}{}{Fundamentals of Logic | Fundamentals of Data Mining and Mathematical Modeling of Machine Learning tasks | Gained familiarity with several Big Data platforms and Deep Learning frameworks}
+
+\cventry{2015}{IEEE - CAS}{IEEE-Kolkata Chapter}{Emerging Trends in Next Gen Computing}{}{Emerging Trends in Next-Gen Computing Systems: Multicore, IoT and Big Data | Dr. SK Sanyal}
+
+
+\section{Recognition}
+
+\cventry{2017}{Indian National Academies' Fellowship}{IAS-NASI-INSA}{}{}{Awarded the Science Academies' Fellowship for excellence in academics and research in the undergraduate level.}
+
+\cventry{2017}{INAE Fellowship}{Indian National Academy of Engineering}{}{}{Awarded the INAE National Fellowship for excellence in academics and research in the undergraduate level.}
+
+\cventry{2017}{SURGE Fellowship}{Indian Institute of Technology, Kanpur}{}{}{Awarded the SURGE National Fellowship for excellence in academics and research in the undergraduate level.}
+
+\cventry{2016}{TEDx Certification}{TEDx-IIEST Shibpur}{}{}{Delivered a public talk about my research work at IIIT Allahabad in a TEDx sponsored event hosted at IIEST-S}
+
+
+\section{Skills and Interests}
+
+\cvitem{Programming:}{Python,MATLAB, Mathematica, Arduino, C++}
+\cvitem{Tools:}{Deep Learning frameworks: PyTorch, Tensorflow and Keras, OpenCV | GitHub, Cluster Computing}{}{}
+\cvitem{Courses:}{Learning Methods in Computer Vision, Mathematical Foundations of Machine Learning,Matrix Methods in Machine Learning, Digital Image Processing, Artificial Neural Networks and Fuzzy Systems, Data Visualization, Information Theory, Statistical Learning, Soft Computing, Digital Signal Processing, Optimization Theory, Deep Learning, Probabilistic Graphical Models, NLP}
+\cvitem{Activities:}{President - Quizzing Club of IIEST Shibpur | Decision Making Committee Member - Students' Senate of IIEST Shibpur | Leadership Training Service WB Regional Awardee - Don Bosco School, Bandel}
+
+%\section{References}
+%\cvitem{1}{\textbf{Dr. Yu Hen Hu}: Department of Electrical and Computer Engineering, UW Madison | Email: \email{yuhen.hu@wisc.edu}{yuhen.hu@wisc.edu} | Research and Academic Advisor | Taught Graduate courses}
+%\cvitem{2}{\textbf{Dr. Ankita Pramanik}: Dept. of Electronics and Telecomm. Engineering, IIEST Shibpur | Email: \email{ankita@telecom.iiests.ac.in}{ankita@telecom.iiests.ac.in} | Academic Advisor | Taught UG Courses and UG Thesis Advisor}
+%\cvitem{3}{\textbf{Dr. Deepak Mishra}: Department of Avionics, IIST Trivandrum | Email: \email{deepak.mishra@iist.ac.in}{deepak.mishra@iist.ac.in} | Research Advisor for Science Academies' National Research Internship Project at IIST Trivandrum}
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
